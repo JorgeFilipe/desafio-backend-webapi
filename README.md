@@ -8,7 +8,7 @@
 ### Requerimentos para o projeto:
   - IDE utilizada `Visual Studio Code`.
   
-  - Usar o Insomnia ou Postman para ver/fazer as requisições.
+  - Usar o `Insomnia` ou `Postman` para ver/fazer as requisições.
   
   - Servidor `MySQL` Banco de Dados (Configurar a String de Conexão no arquivo `appsettings.json`).
 
