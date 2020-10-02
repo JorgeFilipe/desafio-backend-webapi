@@ -2,10 +2,8 @@ using api.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace api.Data {
-    public class DataContext {
-        public class DataContext : DbContext {
-            public DataContext (DbContextOptions<DataContext> options) : base (options) { }
-            public DbSet<Tarefa> Tarefas { get; set; }
-        }
+    public class DataContext : DbContext {
+        public DataContext (DbContextOptions<DataContext> options) : base (options) { }
+        public DbSet<Tarefa> Tarefas { get; set; }
     }
 }
