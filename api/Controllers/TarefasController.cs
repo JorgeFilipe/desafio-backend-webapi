@@ -1,13 +1,12 @@
+using System.Linq;
 using System.Threading.Tasks;
-using api.Data;
-using Microsoft.AspNetCore.Mvc;
-using System.Threading.Tasks;
+using System.Collections.Generic;
+
 using api.Data;
 using api.Models;
+
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using System.Collections.Generic;
-using System.Linq;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Authorization;
 
@@ -23,10 +22,10 @@ namespace api.Controllers {
             this._context = context;
         }
 
-        [HttpGet ("GetTarefas")]
+        [HttpGet ("listarTarefas")]
         public async Task<ActionResult> GetTarefas() {
-            //var tarefas = await _context.Tarefas.ToListAsync ();
-            return Ok ("Tudo Ok");
+            var tarefas = await _context.Tarefas.ToListAsync ();
+            return Ok (tarefas);
         }
     }
 }
