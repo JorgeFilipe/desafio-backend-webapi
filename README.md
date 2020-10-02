@@ -28,7 +28,7 @@
 ## Execução
 
 No diretório do projeto, você pode executar no terminal:
-<h2> `dotnet run` </h2>
+### `dotnet run`
 o projeto será executado e estará de pé em:
 [http://localhost:5001](http://localhost:5001) ou [http://localhost:5000](http://localhost:5000)
 
